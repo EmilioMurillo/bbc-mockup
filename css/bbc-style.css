@@ -1,0 +1,161 @@
+* {
+      -moz-box-sizing: border-box; /* Firexfox */
+      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+      box-sizing: border-box; /* IE */
+
+ }
+
+
+header, section section, footer {
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+}
+
+
+header{
+  height: 50px;
+  clear: both;
+  display: inline-block;
+  background-color: black;
+  margin-bottom: 40px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 25px;
+  color: white;
+  font-size: 15px;
+}
+ul, form {
+  text-align: center;
+  display: inline-block;
+
+}
+
+form{
+  margin-left: 50px;
+}
+a{
+  text-indent: 3px;
+}
+
+h3{
+  display: block;
+  margin-top: 150px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+section .right-side h3{
+  display:block;
+  margin-top: 30px;
+  color: white;
+  font-size: 10px;
+}
+p{
+  color: white;
+}
+h1{
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  border-left: red solid;
+  padding-left: 5px;
+  color: grey;
+
+}
+.nav-container{
+  text-align: center;
+  margin-left: 250px;
+}
+
+.main section{
+
+  float: left;
+  background-color: none;
+
+}
+
+.left-side{
+  width:50%;
+  float: left;
+  height: 250px;
+  background-color: white;
+  background: url(http://pixel.nymag.com/imgs/daily/intelligencer/2016/06/19/19-Donald-trump-pointing.w600.h315.2x.jpg);
+  background-size: 100%;
+
+  background-repeat: no-repeat;
+
+}
+
+.right-side{
+  width: 25%;
+  height:125px;
+  background: url(http://structurecms-staging-psyclone.netdna-ssl.com/client_assets/political/media/picture/5625/4f9d/2017/a85b/9700/00c9/slide_white_house_capitol_black_and_city_3840x1080_hd-wallpaper-57691.jpg?1445285789);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+.bottom{
+  width: 30.3333%;
+  height: 200px;
+  border: 1px solid black;
+  float:left;
+  margin: 17px;
+  background: url(http://structurecms-staging-psyclone.netdna-ssl.com/client_assets/political/media/picture/5625/4f9d/2017/a85b/9700/00c9/slide_white_house_capitol_black_and_city_3840x1080_hd-wallpaper-57691.jpg?1445285789);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+section.bottom h3{
+  display:block;
+  margin-top: 80px;
+  color: white;
+  font-size: 20px;
+  }
+
+@media only screen and (max-width: 600px){
+  .right-side{
+    display: none;
+  }
+  .left-side{
+    width: 100%;
+    height: 200px;
+  }
+  nav{
+    display: none;
+  }
+  .bottom{
+    width: 100%;
+  }
+}
+
+/* There is a problem with the h3 of the main section, it needs to have a margin-top 15% in order to have the text in the center of the section*/
+
+@media (min-width:601px) and (max-width:1000px){
+  .right-side{
+    width:100%;
+
+  }
+  .left-side{
+    width: 100%;
+  }
+
+  nav{
+    display: none;
+  }
+  .bottom{
+    width: 100%;
+  }
+}
